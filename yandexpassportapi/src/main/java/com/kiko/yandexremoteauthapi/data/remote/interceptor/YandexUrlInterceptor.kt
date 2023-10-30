@@ -9,7 +9,7 @@ import java.io.IOException
 /**
  * Интерцептор который вставляет меняет url адрес если под Yandex Client
  */
-class YandexUrlInterceptor(private val yandexRemoteAuth: YandexPassportClient) :
+class YandexPassportUrlInterceptor(private val yandexRemoteAuth: YandexPassportClient) :
     Interceptor {
     @Throws(IOException::class)
     override fun intercept(chain: Chain): Response {

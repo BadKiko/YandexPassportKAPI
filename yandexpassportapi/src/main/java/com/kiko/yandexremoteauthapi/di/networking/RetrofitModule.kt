@@ -2,7 +2,7 @@ package com.kiko.yandexremoteauthapi.di.networking
 
 import com.kiko.yandexremoteauthapi.YandexPassportClient
 import com.kiko.yandexremoteauthapi.constants.YandexPassportConstants
-import com.kiko.yandexremoteauthapi.data.remote.interceptor.YandexUrlInterceptor
+import com.kiko.yandexremoteauthapi.data.remote.interceptor.YandexPassportUrlInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -13,7 +13,7 @@ object RetrofitModule {
         yandexRemoteAuth: YandexPassportClient
     ): OkHttpClient {
         return OkHttpClient.Builder()
-            .addInterceptor(YandexUrlInterceptor(yandexRemoteAuth))
+            .addInterceptor(YandexPassportUrlInterceptor(yandexRemoteAuth))
             .build()
     }
 
