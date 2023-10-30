@@ -14,8 +14,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import com.kiko.yandexpassportkapi.ui.theme.YandexPassportKAPITheme
-import com.kiko.yandexremoteauthapi.YandexPassportClient
-import com.kiko.yandexremoteauthapi.data.common.InfoYandexPassportState
+import com.kiko.yandexpassportapi.YandexPassportClient
+import com.kiko.yandexpassportapi.data.common.InfoYandexPassportState
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
